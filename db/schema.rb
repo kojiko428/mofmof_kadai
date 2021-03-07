@@ -24,8 +24,8 @@ ActiveRecord::Schema.define(version: 2021_03_07_160833) do
 
   create_table "stations", force: :cascade do |t|
     t.string "name_of_railway_line1"
-    t.string "statation_name"
-    t.integer "how_many_minutes_walks"
+    t.string "statation_name1"
+    t.integer "how_many_minutes_walks1"
     t.string "name_of_railway_line2"
     t.string "statation_name2"
     t.integer "how_many_minutes_walks2"

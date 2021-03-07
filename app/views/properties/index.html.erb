@@ -19,9 +19,9 @@
     <% @properties.each do |property| %>
       <tr>
         <td><%= property.property %></td>
-        <td><%= property.rent %></td>
+        <td><p><%= property.rent %>円</p></td>
         <td><%= property.adress %></td>
-        <td><%= property.building_age %></td>
+        <td><p><%= property.building_age %>年</p></td>
         <td><%= property.remarks %></td>
 
         <td><%= link_to 'Show', property %></td>

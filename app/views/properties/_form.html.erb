@@ -20,7 +20,7 @@
   <div class="field">
     <%= f.label :賃料 %>
     <br>
-    <%= f.text_field :rent %>
+    <p> <%= f.text_field :rent %>円</p>
   </div>
 
   <div class="field">
@@ -32,7 +32,7 @@
   <div class="field">
     <%= f.label :築年数 %>
     <br>
-    <%= f.number_field :building_age %>
+   <p> <%= f.number_field :building_age %>年</p>
   </div>
 
   <div class="field">
@@ -63,11 +63,12 @@
   <div class="field">
     <%= s.label :徒歩分数 %>
     <br>
-    <h3><%= s.number_field :how_many_minutes_walks1 %>分<h3>
+  <!-- 数字カウント -->
+    <p><%= s.number_field :how_many_minutes_walks1 %>分</p>
   </div>
   <% end %>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit :登録する%>
   </div>
 <% end %>
