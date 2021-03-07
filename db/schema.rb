@@ -23,6 +23,14 @@ ActiveRecord::Schema.define(version: 2021_03_07_160833) do
   end
 
   create_table "stations", force: :cascade do |t|
+    t.string "name_of_railway_line1"
+    t.string "statation_name"
+    t.integer "how_many_minutes_walks"
+    t.string "name_of_railway_line2"
+    t.string "statation_name2"
+    t.integer "how_many_minutes_walks2"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
