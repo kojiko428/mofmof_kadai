@@ -22,12 +22,12 @@ class PropertiesController < ApplicationController
   def show
     # @property = Property.find(params[:id])
     # 駅情報を反映
-    #物件情報に駅情報を反映させる
+    #物件情報に駅情報の追加
     @stations = @property.stations
 
   end
   def edit
-
+    @stations = Property.all
     # @property = Property.find(params[:id])
   end
   def update

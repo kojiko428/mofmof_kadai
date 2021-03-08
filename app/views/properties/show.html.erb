@@ -29,9 +29,10 @@
 
 <!-- モデルを固定してフォームを生成 -->
 
-
+<tbody>
+<% n = 0 %>
 <% @stations.each do |station| %>
-  <h2><b>最寄駅</b></h2>
+  <h2><b>最寄駅</b><%= n += 1 %></h2>
     <p>
     <strong>路線名:</strong>
     <%= station.name_of_railway_line %>
@@ -45,7 +46,7 @@
     <%= station.how_many_minutes_walks %>
     </p>
     <% end %>
-
+</tbody>
 
 <div class="links">
   <%= link_to '編集', edit_property_path(@property) %>
