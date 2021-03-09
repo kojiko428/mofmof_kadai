@@ -50,7 +50,9 @@
     <h2><b>最寄り駅</b></h2>
 
  <tbody>
+
  <%= f.nested_fields_for :stations, wrapper_tag: :tr do |q| %>
+
  <th>路線名</th>
  <br>
      <td><%= q.text_field :name_of_railway_line %></td>
